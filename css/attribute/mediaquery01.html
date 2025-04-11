@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: antiquewhite;
+        }
+
+        h2 {
+            color: red
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+            /* 
+                @media not print and (...) 
+                @media only screen and (...)
+             */
+
+            @media screen and (max-width: 768px){
+                /* 스타일 속성 */
+                .box{
+                background-color:cornflowerblue;
+                }
+
+                h2 {
+                    color: pink;
+                }
+
+                p {
+                    font-weight: normal;
+                    font-size: 10px;
+                }
+            }
+
+            @media screen and (max-width: 480px){
+                /* 스타일 속성 */
+                .box{
+                background-color:mediumturquoise;
+                }
+
+                h2 {
+                    color: blue;
+                }
+
+                p{
+                    font-weight: normal;
+                    font-size: 20px;
+                    /* em  rem */
+                }
+            }
+                
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h2>h2 tag</h2>
+        <p>p tag</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem optio inventore illo minus sint rerum, officia reiciendis. Praesentium id asperiores, suscipit labore iusto tempora error adipisci provident atque dolores dolor.</p>
+
+    </div>
+</body>
+</html>
